@@ -1,5 +1,7 @@
 # Testing
 
+_see the resources at the bottom of this doc_
+
 Your task is to complete the code in `your_code_here.rb` to make the existing tests in `enumerable_test.rb` to pass.
 
 The code is for you to *reimplment* all of `Enumerable` but only using `each` -- All of Ruby's `Enumerable` features can, and likely are, implemented internally (by Matz and the other core maintainers) in terms of `each`
@@ -67,3 +69,7 @@ Some enumerables are noted at the bottom of the file without any tests. Write te
 
 Seak out some other enumerable methods not mentioned here (See the docs) and write tests *and* code for those.
 
+# Resources
+
+- [Ruby Blocks / Yield](https://mixandgo.com/blog/mastering-ruby-blocks-in-less-than-5-minutes)
+- [Enumerable](http://ruby.bastardsbook.com/chapters/enumerables/)
