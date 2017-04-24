@@ -116,7 +116,7 @@ describe "Enumerable" do
 
   it "implements include? correctly when there is a match" do
     skip
-    results = @reimplements_enumerable.include?(@war_and_peace)
+    results = @reimplements_enumerable.include?(@h2g2)
 
     assert_equal true, results
   end
@@ -144,6 +144,13 @@ describe "Enumerable" do
     assert_equal results, @reimplements_enumerable.max_by { |book| book.year }
   end
 
+  it "implements max_by correctly" do
+    skip
+    results = @war_and_peace
+
+    assert_equal results, @reimplements_enumerable.max_by { |book| book.title }
+  end
+
   it "implements min_by correctly" do
     skip
     results = @pride
@@ -151,14 +158,18 @@ describe "Enumerable" do
     assert_equal results, @reimplements_enumerable.min_by { |book| book.year }
   end
 
-  it "implements reject correctly" do
+  it "implements min_by correctly" do
     skip
+    results = @moby_dick
+
+    assert_equal results, @reimplements_enumerable.min_by { |book| book.title }
+  end
+  it "implements reject correctly" do
     short_books = [@h2g2, @pride]
 
     assert_equal short_books, @reimplements_enumerable.reject { |book| book.page_count > 500 }
   end
 
-  # reverse_each
   # partition
   # one?
   # none?
